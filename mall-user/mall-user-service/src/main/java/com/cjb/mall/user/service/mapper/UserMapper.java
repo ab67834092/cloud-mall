@@ -7,4 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper {
 
     User getUserByParam(User user);
+
+    void insert(User user);
 }

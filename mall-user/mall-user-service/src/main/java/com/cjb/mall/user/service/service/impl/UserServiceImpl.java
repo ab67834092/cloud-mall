@@ -3,6 +3,8 @@ package com.cjb.mall.user.service.service.impl;
 import com.cjb.mall.common.exception.BizException;
 import com.cjb.mall.common.redis.key.UserCacheKey;
 import com.cjb.mall.common.redis.template.CacheTemplate;
+import com.cjb.mall.common.utils.BeanUtils;
+import com.cjb.mall.common.utils.CodecUtils;
 import com.cjb.mall.common.utils.NumberUtils;
 import com.cjb.mall.user.service.mapper.UserMapper;
 import com.cjb.mall.user.service.po.User;
@@ -13,6 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -74,5 +77,28 @@ public class UserServiceImpl implements UserService {
         map.put("phone", phone);
         map.put("code", vcode);
         amqpTemplate.convertAndSend(exchange, routingKey, map);
+    }
+
+    @Override
+    public void register(String phone, String vcode) {
+        //对比验证码
+        String serverVCode = cacheTemplate.get(UserCacheKey.REG_VCODE+phone);
+        if(!serverVCode.equals(vcode)){
+            throw new BizException("验证码不正确！");
+        }
+        User user = new User();
+        BeanUtils.initBean(user);
+        user.setTelephone(phone);
+        user.setSex(0);
+        user.setStatus(1);
+        user.setSource(1);
+        user.setValid(1);
+        userMapper.insert(user);
+
+    }
+
+    public static void main(String[] args) {
+        User user = new User();
+        BeanUtils.generateBeanSetCodeNoGet(user);
     }
 }

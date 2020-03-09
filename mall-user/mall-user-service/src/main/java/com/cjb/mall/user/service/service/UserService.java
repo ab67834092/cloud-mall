@@ -17,7 +17,10 @@ public interface UserService {
      */
     void sendRegPhoneVCode(String phone);
 
-
-
-
+    /**
+     * 注册
+     * @param phone
+     * @param vcode
+     */
+    void register(String phone, String vcode);
 }

@@ -42,4 +42,22 @@ public class UserController {
         userService.sendRegPhoneVCode(phone);
         return ResultUtils.ok();
     }
+
+    /**
+     * 用户注册
+     * @param phone
+     * @param vcode
+     * @return
+     */
+    @PostMapping("register")
+    public ResultVO register(String phone,String vcode) {
+        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(vcode)){
+            return ResultUtils.error("参数错误！");
+        }
+        if(!userService.checkPhoneCanReg(phone)){
+            return ResultUtils.error("该手机号已经被注册！");
+        }
+        userService.register(phone,vcode);
+        return ResultUtils.ok();
+    }
 }
