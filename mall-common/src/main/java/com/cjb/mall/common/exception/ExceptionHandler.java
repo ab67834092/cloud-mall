@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class ExceptionHandler {
 
-	private Logger logger = LoggerFactory.getLogger(ExceptionHandler.class);
+	private static final Logger logger = LoggerFactory.getLogger(ExceptionHandler.class);
 
 	/**
 	 * 统一异常处理方法，返回统一异常信息

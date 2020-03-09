@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall-common/mall-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" filepath="$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" filepath="$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-user/mall-user.iml" filepath="$PROJECT_DIR$/mall-user/mall-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-user/mall-user-interface/mall-user-interface.iml" filepath="$PROJECT_DIR$/mall-user/mall-user-interface/mall-user-interface.iml" />

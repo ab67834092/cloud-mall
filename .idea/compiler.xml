@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mall-common" />
         <module name="mall-eureka-server" />
+        <module name="mall-gateway" />
         <module name="mall-sms-service" />
         <module name="mall-user-interface" />
         <module name="mall-user-service" />
@@ -17,6 +18,7 @@
       <module name="mall" target="1.8" />
       <module name="mall-common" target="1.8" />
       <module name="mall-eureka-server" target="1.8" />
+      <module name="mall-gateway" target="1.8" />
       <module name="mall-sms-service" target="1.8" />
       <module name="mall-user" target="1.8" />
       <module name="mall-user-interface" target="1.8" />
