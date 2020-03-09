@@ -6,7 +6,7 @@ import org.apache.commons.lang.StringUtils;
 import java.util.UUID;
 
 /**
- * @author: chenjiabao
+ * @author: HuYi.Zhang
  * @create: 2018-04-30 15:56
  **/
 public class CodecUtils {
@@ -14,7 +14,7 @@ public class CodecUtils {
 
 
     public static String md5Hex(String data,String salt) {
-        if (StringUtils.isEmpty(salt)) {
+        if (StringUtils.isBlank(salt)) {
             salt = data.hashCode() + "";
         }
         return DigestUtils.md5Hex(salt + DigestUtils.md5Hex(data));

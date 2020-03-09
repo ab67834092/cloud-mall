@@ -3,9 +3,9 @@ package com.cjb.mall.user.service.service.impl;
 import com.cjb.mall.common.exception.BizException;
 import com.cjb.mall.common.redis.key.UserCacheKey;
 import com.cjb.mall.common.redis.template.CacheTemplate;
-import com.cjb.mall.common.utils.BeanUtils;
-import com.cjb.mall.common.utils.CodecUtils;
-import com.cjb.mall.common.utils.NumberUtils;
+import com.cjb.mall.common.user.UserInfo;
+import com.cjb.mall.common.utils.*;
+import com.cjb.mall.user.service.config.JwtConfig;
 import com.cjb.mall.user.service.mapper.UserMapper;
 import com.cjb.mall.user.service.po.User;
 import com.cjb.mall.user.service.service.UserService;
@@ -40,6 +40,9 @@ public class UserServiceImpl implements UserService {
     @Value("${mq.direct.sms.reg.vcode.routingKey}")
     private String routingKey;
 
+    @Autowired
+    private JwtConfig jwtConfig;
+
     @Override
     public boolean checkPhoneCanReg(String phone) {
         User user = userMapper.getUserByParam(new User(phone));
@@ -69,7 +72,11 @@ public class UserServiceImpl implements UserService {
         //5分钟内有效
         cacheTemplate.set(UserCacheKey.REG_VCODE+phone,vcode,5*60);
         cacheTemplate.set(UserCacheKey.SEND_REG_VCODE_ONE_MINUTE_LIMIT + phone,vcode,60);
-        cacheTemplate.incr(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,1);
+        if(!cacheTemplate.hasKey(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone)){
+            cacheTemplate.set(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,1, DateUtils.getRemainSecondsOneDay(new Date()));
+        }else{
+            cacheTemplate.incr(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,1);
+        }
 
         //通过消息队列发送
         //向mq中发送消息
@@ -95,6 +102,31 @@ public class UserServiceImpl implements UserService {
         user.setValid(1);
         userMapper.insert(user);
 
+        //把验证码从Redis中删除
+        cacheTemplate.del(UserCacheKey.REG_VCODE+phone);
+        cacheTemplate.del(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone);
+
+    }
+
+    @Override
+    public String login(String phone, String pwd) {
+        User record = new User();
+        record.setTelephone(phone);
+        //首先根据用户名查询用户
+        User user = userMapper.getUserByParam(record);
+        if (user == null) {
+            throw new BizException("用户不存在！");
+        }
+        //检验密码是否正确
+        if (!CodecUtils.md5Hex(pwd, user.getSalt()).equals(user.getPwd())) {
+            //密码不正确
+            throw new BizException("密码不正确！");
+        }
+
+        UserInfo userInfo = new UserInfo(user.getId(), user.getTelephone());
+        //生成Token
+        String token = JwtUtils.generateToken(userInfo, jwtConfig.getPrivateKey(), jwtConfig.getExpire());
+        return token;
     }
 
     public static void main(String[] args) {

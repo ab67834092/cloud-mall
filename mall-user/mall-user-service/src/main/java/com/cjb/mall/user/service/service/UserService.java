@@ -23,4 +23,11 @@ public interface UserService {
      * @param vcode
      */
     void register(String phone, String vcode);
+
+    /**
+     * 用户名密码登录
+     * @param phone
+     * @param pwd
+     */
+    String login(String phone, String pwd);
 }
