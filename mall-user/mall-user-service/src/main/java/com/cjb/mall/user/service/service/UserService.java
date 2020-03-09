@@ -22,7 +22,7 @@ public interface UserService {
      * @param phone
      * @param vcode
      */
-    void register(String phone, String vcode);
+    void register(String phone, String vcode,String pwd);
 
     /**
      * 用户名密码登录

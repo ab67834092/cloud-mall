@@ -6,8 +6,12 @@ import com.cjb.mall.common.utils.CookieUtils;
 import com.cjb.mall.user.service.config.JwtConfig;
 import com.cjb.mall.user.service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -45,9 +49,6 @@ public class UserController {
         if(StringUtils.isEmpty(phone)){
             return ResultUtils.error("注册手机号不能为空！");
         }
-        if(!userService.checkPhoneCanReg(phone)){
-            return ResultUtils.error("该手机号已经被注册！");
-        }
         userService.sendRegPhoneVCode(phone);
         return ResultUtils.ok();
     }
@@ -59,14 +60,11 @@ public class UserController {
      * @return
      */
     @PostMapping("register")
-    public ResultVO register(String phone,String vcode) {
-        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(vcode)){
+    public ResultVO register(String phone,String vcode,String pwd) {
+        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(vcode) || StringUtils.isEmpty(pwd)){
             return ResultUtils.error("参数错误！");
         }
-        if(!userService.checkPhoneCanReg(phone)){
-            return ResultUtils.error("该手机号已经被注册！");
-        }
-        userService.register(phone,vcode);
+        userService.register(phone,vcode,pwd);
         return ResultUtils.ok();
     }
 
@@ -88,4 +86,18 @@ public class UserController {
     }
 
 
+    /**
+     * 注销登录
+     *
+     * @param token
+     * @param response
+     * @return
+     */
+    @GetMapping("logout")
+    public ResultVO logout(@CookieValue("MALL_TOKEN") String token, HttpServletResponse response) {
+        if (!StringUtils.isEmpty(token)) {
+            CookieUtils.newBuilder(response).maxAge(0).build(jwtConfig.getCookieName(), token);
+        }
+        return ResultUtils.ok();
+    }
 }

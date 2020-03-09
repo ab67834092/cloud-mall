@@ -3,6 +3,7 @@ package com.cjb.mall.user.service.service.impl;
 import com.cjb.mall.common.exception.BizException;
 import com.cjb.mall.common.redis.key.UserCacheKey;
 import com.cjb.mall.common.redis.template.CacheTemplate;
+import com.cjb.mall.common.result.ResultUtils;
 import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.*;
 import com.cjb.mall.user.service.config.JwtConfig;
@@ -60,6 +61,11 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public void sendRegPhoneVCode(String phone) {
+        User userInDb = userMapper.getUserByParam(new User(phone));
+        if(userInDb!=null){
+            throw new BizException("该手机号已经被注册！");
+        }
+
         String limit = cacheTemplate.get(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone);
         if(Integer.parseInt(limit)>=10){
             throw new BizException("每个手机号一天只能发送10次");
@@ -87,7 +93,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void register(String phone, String vcode) {
+    public void register(String phone, String vcode,String pwd) {
+        User userInDb = userMapper.getUserByParam(new User(phone));
+        if(userInDb!=null){
+            throw new BizException("该手机号已经被注册！");
+        }
         //对比验证码
         String serverVCode = cacheTemplate.get(UserCacheKey.REG_VCODE+phone);
         if(!serverVCode.equals(vcode)){
@@ -95,6 +105,12 @@ public class UserServiceImpl implements UserService {
         }
         User user = new User();
         BeanUtils.initBean(user);
+        //生成盐
+        String salt = CodecUtils.generateSalt();
+        user.setSalt(salt);
+        //生成密码
+        String md5Pwd = CodecUtils.md5Hex(pwd, user.getSalt());
+        user.setPwd(md5Pwd);
         user.setTelephone(phone);
         user.setSex(0);
         user.setStatus(1);
