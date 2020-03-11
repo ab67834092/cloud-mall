@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 /**
- * @author bystander
+ * 过滤白名单
+ * @author chenjiabao
  * @date 2018/10/2
  */
 @Configuration

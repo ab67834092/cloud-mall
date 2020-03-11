@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 import java.security.PublicKey;
 
 /**
- * @author bystander
+ * @author chenjiabao
  * @date 2018/10/2
  */
 
@@ -22,7 +22,6 @@ public class JwtProperties {
 
     private String pubKeyPath;
     private PublicKey publicKey;
-    private String cookieName;
 
     public String getPubKeyPath() {
         return pubKeyPath;
@@ -38,14 +37,6 @@ public class JwtProperties {
 
     public void setPublicKey(PublicKey publicKey) {
         this.publicKey = publicKey;
-    }
-
-    public String getCookieName() {
-        return cookieName;
-    }
-
-    public void setCookieName(String cookieName) {
-        this.cookieName = cookieName;
     }
 
     @PostConstruct

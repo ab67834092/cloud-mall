@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.cjb.mall</groupId>
-        <artifactId>mall-user</artifactId>
+        <artifactId>mall</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../mall</relativePath>
     </parent>
-
-    <artifactId>mall-user-service</artifactId>
-    <name>mall-user-service</name>
+    <artifactId>mall-auth-center</artifactId>
+    <name>mall-auth-center</name>
 
     <dependencies>
         <dependency>
@@ -23,5 +23,7 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+
 
 </project>

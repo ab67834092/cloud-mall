@@ -25,10 +25,10 @@ public class LoginFilter extends ZuulFilter {
     private static final Logger logger = LoggerFactory.getLogger(JwtProperties.class);
 
     @Autowired
-    private JwtProperties props;
+    private JwtProperties jwtProperties;
 
     @Autowired
-    private FilterProperties filterProps;
+    private FilterProperties filterProperties;
 
     @Override
     public String filterType() {
@@ -60,7 +60,7 @@ public class LoginFilter extends ZuulFilter {
         String token = CookieUtils.getCookieValue(request, props.getCookieName());
         try {
             //从Token获取解析用户信息
-            JwtUtils.getUserInfo(props.getPublicKey(), token);
+            JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
             //解析成功，什么都不做，放行
 
             //todo 如果做权限管理的话，在这做权限检验

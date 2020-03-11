@@ -1,4 +1,4 @@
-package com.cjb.mall.user.service.config;
+package com.cjb.mall.auth.center.config;
 
 import com.cjb.mall.common.utils.RsaUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;

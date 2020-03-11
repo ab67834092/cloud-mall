@@ -1,8 +1,8 @@
-package com.cjb.mall.user.service.po;
+package com.cjb.mall.user.vo;
 
 import java.util.Date;
 
-public class User {
+public class UserVo {
     
     private Integer id;
 
@@ -48,11 +48,11 @@ public class User {
 
     private Integer valid;
 
-    public User(String telephone) {
+    public UserVo(String telephone) {
         this.telephone = telephone;
     }
 
-    public User() {
+    public UserVo() {
     }
 
     public Integer getId() {

@@ -1,5 +1,8 @@
 package com.cjb.mall.user.service.service;
 
+import com.cjb.mall.common.user.UserInfo;
+import com.cjb.mall.user.vo.UserVo;
+
 /**
  * Created by cjb on 2019/1/23.
  */
@@ -25,9 +28,10 @@ public interface UserService {
     void register(String phone, String vcode,String pwd);
 
     /**
-     * 用户名密码登录
-     * @param phone
+     * 查询用户
+     * @param username
      * @param pwd
+     * @return
      */
-    String login(String phone, String pwd);
+    UserVo queryUser(String username, String pwd);
 }

@@ -3,13 +3,12 @@ package com.cjb.mall.user.service.service.impl;
 import com.cjb.mall.common.exception.BizException;
 import com.cjb.mall.common.redis.key.UserCacheKey;
 import com.cjb.mall.common.redis.template.CacheTemplate;
-import com.cjb.mall.common.result.ResultUtils;
 import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.*;
-import com.cjb.mall.user.service.config.JwtConfig;
 import com.cjb.mall.user.service.mapper.UserMapper;
 import com.cjb.mall.user.service.po.User;
 import com.cjb.mall.user.service.service.UserService;
+import com.cjb.mall.user.vo.UserVo;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,9 +39,6 @@ public class UserServiceImpl implements UserService {
 
     @Value("${mq.direct.sms.reg.vcode.routingKey}")
     private String routingKey;
-
-    @Autowired
-    private JwtConfig jwtConfig;
 
     @Override
     public boolean checkPhoneCanReg(String phone) {
@@ -125,25 +121,22 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String login(String phone, String pwd) {
-        User record = new User();
-        record.setTelephone(phone);
-        //首先根据用户名查询用户
-        User user = userMapper.getUserByParam(record);
-        if (user == null) {
-            throw new BizException("用户不存在！");
+    public UserVo queryUser(String username, String pwd) {
+        User user = new User();
+        user.setTelephone(username);
+        User userByParam = userMapper.getUserByParam(user);
+        if(userByParam==null){
+            throw new BizException("用户不存在");
         }
         //检验密码是否正确
-        if (!CodecUtils.md5Hex(pwd, user.getSalt()).equals(user.getPwd())) {
-            //密码不正确
-            throw new BizException("密码不正确！");
+        if(!CodecUtils.md5Hex(pwd, user.getSalt()).equals(user.getPwd())){
+            throw new BizException("密码不正确");
         }
+        UserVo userVo = new UserVo();
 
-        UserInfo userInfo = new UserInfo(user.getId(), user.getTelephone());
-        //生成Token
-        String token = JwtUtils.generateToken(userInfo, jwtConfig.getPrivateKey(), jwtConfig.getExpire());
-        return token;
+        return userVo;
     }
+
 
     public static void main(String[] args) {
         User user = new User();

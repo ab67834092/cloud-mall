@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/mall-sms-service/pom.xml" />
         <option value="$PROJECT_DIR$/mall-user/pom.xml" />
         <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-auth-center/pom.xml" />
       </list>
     </option>
   </component>
