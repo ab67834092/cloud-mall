@@ -57,7 +57,7 @@ public class LoginFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         //获取请求
         HttpServletRequest request = context.getRequest();
-        String token = CookieUtils.getCookieValue(request, props.getCookieName());
+        String token = request.getHeader("token");
         try {
             //从Token获取解析用户信息
             JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
@@ -82,7 +82,7 @@ public class LoginFilter extends ZuulFilter {
     private Boolean isAllowPath(String requestURI) {
         boolean flag = false;
 
-        for (String allowPath : filterProps.getAllowPaths()) {
+        for (String allowPath : filterProperties.getAllowPaths()) {
             if (requestURI.startsWith(allowPath)) {
                 //允许
                 flag = true;
