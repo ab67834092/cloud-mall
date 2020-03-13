@@ -67,7 +67,7 @@
       #{createUser,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, #{valid,jdbcType=INTEGER}
       )
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="/domain.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.cjb.mall.user.service.po.User" >
     update user_t
     <set >
       <if test="telephone != null" >

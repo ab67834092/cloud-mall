@@ -110,4 +110,12 @@ public class RsaUtils {
         }
         Files.write(dest.toPath(), bytes);
     }
+
+    public static void main(String[] args) {
+        try {
+            generateKey("E://pub.key","E://pri.key","mall@Login(Auth}*^31)&yun6%f3q2");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

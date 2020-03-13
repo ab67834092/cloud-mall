@@ -1,6 +1,7 @@
 package com.cjb.mall.common.redis.template;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -13,8 +14,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by chenjiabao on 2020/1/1.
  */
-@Component
-public class RedisCacheTemplateImpl implements CacheTemplate {
+@Configuration
+public class CacheTemplateImpl implements CacheTemplate {
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;

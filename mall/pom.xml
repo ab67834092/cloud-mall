@@ -19,6 +19,10 @@
 
     <modules>
         <module>../mall-eureka-server</module>
+        <module>../mall-auth-center</module>
+        <module>../mall-gateway</module>
+        <module>../mall-sms-service</module>
+        <module>../mall-user</module>
     </modules>
 
 

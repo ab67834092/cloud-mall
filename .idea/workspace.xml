@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1ebcf94-ad78-403a-b8fa-2f24247d3ccb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="a1ebcf94-ad78-403a-b8fa-2f24247d3ccb" name="Default Changelist" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedissonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/lock/LockService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/lock/LockServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/RedisCacheTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/MallGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/MallGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/test/java/com/cjb/mall/gateway/MallGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/test/java/com/cjb/mall/gateway/MallGatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sms-service/src/test/java/com/cjb/mall/sms/service/MallSmsServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sms-service/src/test/java/com/cjb/mall/sms/service/MallSmsServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-user/mall-user-interface/src/test/java/com/cjb/mall/MallUserInterfaceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/mall-user-interface/src/test/java/com/cjb/mall/MallUserInterfaceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-user/target/" />
@@ -32,56 +37,106 @@
     <session id="-1050511217">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
-          <entry key="java" value="83" />
-          <entry key="properties" value="18" />
-          <entry key="xml" value="18" />
-          <entry key="yml" value="1" />
+          <entry key="class" value="5" />
+          <entry key="java" value="111" />
+          <entry key="properties" value="26" />
+          <entry key="xml" value="27" />
+          <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="83" />
-          <entry key="Properties" value="18" />
-          <entry key="XML" value="18" />
-          <entry key="YAML" value="1" />
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="111" />
+          <entry key="Properties" value="26" />
+          <entry key="XML" value="27" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1795" />
-          <entry key="properties" value="140" />
+          <entry key="java" value="1836" />
+          <entry key="properties" value="151" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="70" />
+          <entry key="xml" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1795" />
+          <entry key="JAVA" value="1836" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="140" />
-          <entry key="XML" value="70" />
+          <entry key="Properties" value="151" />
+          <entry key="XML" value="108" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+            <state relative-caret-position="450">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2025">
+              <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/MallUserServiceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -100,6 +155,7 @@
     <findStrings>
       <find>logger</find>
       <find>isAllowPath</find>
+      <find>do</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -116,7 +172,6 @@
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/DateUtils.java" />
         <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/utils/RsaUtils.java" />
         <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/utils/CodecUtils.java" />
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CodecUtils.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/user/UserInfo.java" />
         <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/config/JwtConfig.java" />
@@ -143,11 +198,19 @@
         <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/JwtProperties.java" />
         <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/FilterProperties.java" />
         <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mall/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-sms-service/src/test/java/com/cjb/mall/sms/service/MallSmsServiceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mall-gateway/src/test/java/com/cjb/mall/gateway/MallGatewayApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/MallGatewayApplication.java" />
         <option value="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java" />
+        <option value="$PROJECT_DIR$/mall-user/mall-user-interface/src/test/java/com/cjb/mall/MallUserInterfaceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/RedisCacheTemplateImpl.java" />
+        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java" />
       </list>
     </option>
   </component>
@@ -167,11 +230,21 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="width" value="1934" />
     <option name="height" value="1030" />
@@ -184,6 +257,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,25 +275,85 @@
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-auth-center" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-auth-center" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-auth-center" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-auth-center" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="key" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -246,24 +382,13 @@
               <item name="mall-eureka-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
@@ -319,7 +444,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
@@ -329,23 +488,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583996556325" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cloud" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584090865398" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -374,7 +547,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DateUtils">
+  <component name="RunManager" selected="Spring Boot.MallUserServiceApplication">
     <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cjb.mall.common.utils.DateUtils" />
       <module name="mall-common" />
@@ -388,12 +561,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cjb.mall.user.service.service.impl.UserServiceImpl" />
-      <module name="mall-user-service" />
+    <configuration name="RsaUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cjb.mall.common.utils.RsaUtils" />
+      <module name="mall-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cjb.mall.user.service.service.impl.*" />
+          <option name="PATTERN" value="com.cjb.mall.common.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,6 +581,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjb.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.MallEurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.gateway.MallGatewayApplication" />
@@ -415,16 +601,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallSmsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-sms-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjb.mall.sms.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.sms.service.MallSmsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjb.mall.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.user.service.MallUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.MallGatewayApplication" />
       <item itemvalue="Spring Boot.MallAuthCenterApplication" />
-      <item itemvalue="Application.UserServiceImpl" />
       <item itemvalue="Application.DateUtils" />
+      <item itemvalue="Spring Boot.MallEurekaServerApplication" />
+      <item itemvalue="Spring Boot.MallSmsServiceApplication" />
+      <item itemvalue="Application.RsaUtils" />
+      <item itemvalue="Spring Boot.MallUserServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MallUserServiceApplication" />
+        <item itemvalue="Application.RsaUtils" />
+        <item itemvalue="Spring Boot.MallSmsServiceApplication" />
+        <item itemvalue="Spring Boot.MallEurekaServerApplication" />
         <item itemvalue="Application.DateUtils" />
-        <item itemvalue="Application.UserServiceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +660,10 @@
       <workItem from="1583889158570" duration="21000" />
       <workItem from="1583889211577" duration="7626000" />
       <workItem from="1583907963959" duration="3115000" />
-      <workItem from="1583983013654" duration="4029000" />
+      <workItem from="1583983013654" duration="5152000" />
+      <workItem from="1584061858178" duration="4419000" />
+      <workItem from="1584074299450" duration="100000" />
+      <workItem from="1584087490929" duration="2049000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1583729163377</created>
@@ -462,13 +683,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41220000" />
+    <option name="totallyTimeSpent" value="48911000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -479,7 +700,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -514,132 +735,25 @@
     <MESSAGE value="修改" />
     <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/JwtProperties.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/RedisCacheTemplateImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/utils/JwtUtils.java" />
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/utils/CodecUtils.java" />
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/utils/RsaUtils.java" />
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CodecUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar!/org/joda/time/DateTime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="301" column="20" selection-start-line="301" selection-start-column="20" selection-end-line="301" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/org/slf4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2875">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="13" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/exception/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="89" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="13" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/AuthService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-interface/src/main/java/com/cjb/mall/user/vo/UserVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-auth-center/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -655,13 +769,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/config/JwtConfig.java" />
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/JwtUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1806">
@@ -683,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/client/UserClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/user/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -702,19 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1450">
           <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2950">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,9 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,26 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/JwtProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -779,16 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/FilterProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -799,21 +847,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/MallEurekaServerApplication.java">
@@ -823,16 +857,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/target/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/target/classes/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/test/java/com/cjb/mall/sms/service/MallSmsServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/test/java/com/cjb/mall/gateway/MallGatewayApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/MallSmsServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/MallGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/FilterProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/RsaUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_171/src.zip!/java/security/KeyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/JwtProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
+        <state relative-caret-position="275">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/client/UserClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-interface/src/test/java/com/cjb/mall/MallUserInterfaceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedissonConfig.java" />
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -843,25 +992,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java">
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/lock/LockServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        <state relative-caret-position="200">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/lock/LockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/key/UserCacheKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/MallUserServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mall-eureka-server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
