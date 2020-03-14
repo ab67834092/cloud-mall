@@ -8,12 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class UserController {
 
 
@@ -58,9 +55,9 @@ public class UserController {
      * @return
      */
     @PostMapping("query")
-    public ResponseEntity<UserVo> queryUser(@RequestParam("username") String username, @RequestParam("pwd") String pwd){
+    public UserVo queryUser(@RequestParam("username") String username, @RequestParam("pwd") String pwd){
         UserVo userVo = userService.queryUser(username, pwd);
-        return ResponseEntity.ok(userVo);
+        return userVo;
     }
 
 }
