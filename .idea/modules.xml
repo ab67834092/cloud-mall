@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud-mall.iml" filepath="$PROJECT_DIR$/.idea/cloud-mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-auth-center/mall-auth-center.iml" filepath="$PROJECT_DIR$/mall-auth-center/mall-auth-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-auth-center/mall-auth-center.iml" filepath="$PROJECT_DIR$/mall-auth-center/mall-auth-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall-common/mall-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" filepath="$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" filepath="$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-user/mall-user.iml" filepath="$PROJECT_DIR$/mall-user/mall-user.iml" />

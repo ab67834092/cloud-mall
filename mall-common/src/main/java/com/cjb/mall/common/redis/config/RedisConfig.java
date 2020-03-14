@@ -1,5 +1,7 @@
 package com.cjb.mall.common.redis.config;
 
+import com.cjb.mall.common.redis.template.CacheTemplate;
+import com.cjb.mall.common.redis.template.CacheTemplateImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.*;
