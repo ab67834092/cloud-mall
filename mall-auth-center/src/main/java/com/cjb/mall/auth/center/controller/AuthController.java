@@ -31,6 +31,7 @@ public class AuthController {
             return ResultUtils.error("参数错误！");
         }
         String token = authService.login(phone, pwd);
+        System.out.println("token:"+token);
         return ResultUtils.ok(token);
     }
 

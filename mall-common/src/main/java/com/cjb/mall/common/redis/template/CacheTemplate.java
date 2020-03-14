@@ -52,6 +52,13 @@ public interface CacheTemplate {
     public String get(String key);
 
     /**
+     * 普通缓存获取 返回OBJECT
+     * @param key
+     * @return
+     */
+    public Object getObject(String key);
+
+    /**
      * 普通缓存放入
      * @param key 键
      * @param value 值

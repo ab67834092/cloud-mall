@@ -3,6 +3,7 @@ package com.cjb.mall.user.service.service.impl;
 import com.cjb.mall.common.exception.BizException;
 import com.cjb.mall.common.redis.key.UserCacheKey;
 import com.cjb.mall.common.redis.template.CacheTemplate;
+import com.cjb.mall.common.result.ResultUtils;
 import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.*;
 import com.cjb.mall.user.service.mapper.UserMapper;
@@ -57,17 +58,20 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public void sendRegPhoneVCode(String phone) {
+        if(StringUtils.isEmpty(phone)){
+            throw new BizException("注册手机号不能为空！");
+        }
         User userInDb = userMapper.getUserByParam(new User(phone));
         if(userInDb!=null){
             throw new BizException("该手机号已经被注册！");
         }
 
-        String limit = cacheTemplate.get(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone);
-        if(Integer.parseInt(limit)>=10){
+        Object limit = cacheTemplate.getObject(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone);
+        if(limit!=null&&Integer.parseInt(limit.toString())>=10){
             throw new BizException("每个手机号一天只能发送10次");
         }
         String str = cacheTemplate.get(UserCacheKey.SEND_REG_VCODE_ONE_MINUTE_LIMIT + phone);
-        if(StringUtils.isEmpty(str)){
+        if(!StringUtils.isEmpty(str)){
             throw new BizException("每个手机号1分钟只能发送1次验证码");
         }
         String vcode = NumberUtils.generateCode(6);
@@ -75,7 +79,7 @@ public class UserServiceImpl implements UserService {
         cacheTemplate.set(UserCacheKey.REG_VCODE+phone,vcode,5*60);
         cacheTemplate.set(UserCacheKey.SEND_REG_VCODE_ONE_MINUTE_LIMIT + phone,vcode,60);
         if(!cacheTemplate.hasKey(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone)){
-            cacheTemplate.set(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,1, DateUtils.getRemainSecondsOneDay(new Date()));
+            cacheTemplate.set(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,"1", DateUtils.getRemainSecondsOneDay(new Date()));
         }else{
             cacheTemplate.incr(UserCacheKey.SEND_REG_VCODE_ONE_DAY_LIMIT + phone,1);
         }
@@ -90,12 +94,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void register(String phone, String vcode,String pwd) {
+        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(vcode) || StringUtils.isEmpty(pwd)){
+            throw new BizException("参数错误！");
+        }
         User userInDb = userMapper.getUserByParam(new User(phone));
         if(userInDb!=null){
             throw new BizException("该手机号已经被注册！");
         }
         //对比验证码
         String serverVCode = cacheTemplate.get(UserCacheKey.REG_VCODE+phone);
+        if(StringUtils.isEmpty(serverVCode)){
+            throw new BizException("验证码已失效！");
+        }
         if(!serverVCode.equals(vcode)){
             throw new BizException("验证码不正确！");
         }
@@ -129,7 +139,7 @@ public class UserServiceImpl implements UserService {
             throw new BizException("用户不存在");
         }
         //检验密码是否正确
-        if(!CodecUtils.md5Hex(pwd, user.getSalt()).equals(user.getPwd())){
+        if(!CodecUtils.md5Hex(pwd, userByParam.getSalt()).equals(userByParam.getPwd())){
             throw new BizException("密码不正确");
         }
         UserVo userVo = new UserVo();

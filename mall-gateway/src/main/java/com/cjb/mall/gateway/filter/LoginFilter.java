@@ -10,9 +10,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * @author chenjiabao
@@ -32,12 +36,12 @@ public class LoginFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return "pre";
+        return FilterConstants.PRE_TYPE;
     }
 
     @Override
     public int filterOrder() {
-        return 5;
+        return 4;
     }
 
 
@@ -58,6 +62,11 @@ public class LoginFilter extends ZuulFilter {
         //获取请求
         HttpServletRequest request = context.getRequest();
         String token = request.getHeader("token");
+        //登录验证逻辑 JWT
+        if(StringUtils.isEmpty(token)){
+            context.setSendZuulResponse(false);
+            context.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
+        }
         try {
             //从Token获取解析用户信息
             JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
@@ -81,13 +90,10 @@ public class LoginFilter extends ZuulFilter {
      */
     private Boolean isAllowPath(String requestURI) {
         boolean flag = false;
-
-        for (String allowPath : filterProperties.getAllowPaths()) {
-            if (requestURI.startsWith(allowPath)) {
-                //允许
-                flag = true;
-                break;
-            }
+        List<String> allowPaths =filterProperties.getAllowPaths();
+        if (allowPaths.contains(requestURI)) {
+            //允许
+            flag = true;
         }
         return flag;
 

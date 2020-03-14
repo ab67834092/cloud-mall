@@ -93,6 +93,15 @@ public class CacheTemplateImpl implements CacheTemplate {
     }
 
     /**
+     * 普通缓存获取 返回OBJECT
+     * @param key 键
+     * @return 值
+     */
+    public Object getObject(String key){
+        return key==null?null: redisTemplate.opsForValue().get(key);
+    }
+
+    /**
      * 普通缓存放入
      * @param key 键
      * @param value 值

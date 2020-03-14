@@ -5,6 +5,7 @@ import com.cjb.mall.common.result.ResultVO;
 import com.cjb.mall.user.service.service.UserService;
 import com.cjb.mall.user.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/api/user")
 public class UserController {
 
 
@@ -37,9 +37,6 @@ public class UserController {
      */
     @PostMapping("sendRegPhoneVCode")
     public ResultVO sendRegPhoneVCode(String phone){
-        if(StringUtils.isEmpty(phone)){
-            return ResultUtils.error("注册手机号不能为空！");
-        }
         userService.sendRegPhoneVCode(phone);
         return ResultUtils.ok();
     }
@@ -52,9 +49,6 @@ public class UserController {
      */
     @PostMapping("register")
     public ResultVO register(String phone,String vcode,String pwd) {
-        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(vcode) || StringUtils.isEmpty(pwd)){
-            return ResultUtils.error("参数错误！");
-        }
         userService.register(phone,vcode,pwd);
         return ResultUtils.ok();
     }
@@ -63,10 +57,10 @@ public class UserController {
      * 查询用户
      * @return
      */
-    @GetMapping("query")
-    public UserVo queryUser(@RequestParam("username") String username, @RequestParam("pwd") String pwd){
+    @PostMapping("query")
+    public ResponseEntity<UserVo> queryUser(@RequestParam("username") String username, @RequestParam("pwd") String pwd){
         UserVo userVo = userService.queryUser(username, pwd);
-        return userVo;
+        return ResponseEntity.ok(userVo);
     }
 
 }

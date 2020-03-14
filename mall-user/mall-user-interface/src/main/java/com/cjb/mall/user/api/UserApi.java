@@ -2,6 +2,7 @@ package com.cjb.mall.user.api;
 
 import com.cjb.mall.user.vo.UserVo;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 public interface UserApi {
@@ -11,6 +12,6 @@ public interface UserApi {
      * @param pwd
      * @return
      */
-    @GetMapping("query")
+    @PostMapping("query")
     UserVo queryUser(@RequestParam("username") String username, @RequestParam("pwd") String pwd);
 }

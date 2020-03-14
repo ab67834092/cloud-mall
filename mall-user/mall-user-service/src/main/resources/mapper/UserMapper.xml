@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.cjb.mall.user.service.mapper.UserDao" >
+<mapper namespace="com.cjb.mall.user.service.mapper.UserMapper" >
   <resultMap id="BaseResultMap" type="com.cjb.mall.user.service.po.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="telephone" property="telephone" jdbcType="VARCHAR" />
@@ -36,7 +36,7 @@
     from user_t
     where 1=1
     <if test="telephone!=null and telephone!=''">
-      telephone = #{telephone,jdbcType=VARCHAR}
+      and telephone = #{telephone,jdbcType=VARCHAR}
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >

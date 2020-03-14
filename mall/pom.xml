@@ -23,6 +23,7 @@
         <module>../mall-gateway</module>
         <module>../mall-sms-service</module>
         <module>../mall-user</module>
+        <module>../mall-test</module>
     </modules>
 
 
@@ -173,6 +174,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
         </dependency>
     </dependencies>
 

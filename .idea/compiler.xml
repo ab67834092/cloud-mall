@@ -11,6 +11,7 @@
         <module name="mall-eureka-server" />
         <module name="mall-gateway" />
         <module name="mall-sms-service" />
+        <module name="mall-test" />
         <module name="mall-user-interface" />
         <module name="mall-user-service" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="mall-eureka-server" target="1.8" />
       <module name="mall-gateway" target="1.8" />
       <module name="mall-sms-service" target="1.8" />
+      <module name="mall-test" target="1.8" />
       <module name="mall-user" target="1.8" />
       <module name="mall-user-interface" target="1.8" />
       <module name="mall-user-service" target="1.8" />
