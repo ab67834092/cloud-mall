@@ -8,7 +8,16 @@ public class UserInfo {
     private String name;
     private Date tokenExpire;
 
+    public UserInfo(Integer id) {
+        this.id = id;
+    }
+
     public UserInfo() {
+    }
+
+    public UserInfo(Integer id, Date tokenExpire) {
+        this.id = id;
+        this.tokenExpire = tokenExpire;
     }
 
     public UserInfo(Integer id, String name) {

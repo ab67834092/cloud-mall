@@ -8,6 +8,7 @@ import com.cjb.mall.gateway.properties.JwtProperties;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jws;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,8 +48,6 @@ public class LoginFilter extends ZuulFilter {
         return 4;
     }
 
-
-
     @Override
     public boolean shouldFilter() {
         RequestContext ctx = RequestContext.getCurrentContext();
@@ -75,15 +74,17 @@ public class LoginFilter extends ZuulFilter {
             UserInfo userInfo = JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
             //解析成功，什么都不做，放行
             System.out.println(userInfo.getId());
-            System.out.println(userInfo.getName());
             System.out.println(userInfo.getTokenExpire());
-
-
             //todo 如果做权限管理的话，在这做权限检验
+        }catch (ExpiredJwtException e){
+            context.setSendZuulResponse(false);
+            context.setResponseStatusCode(403);
+            logger.error("token失效了");
         } catch (Exception e) {
             //检验出现异常，返回403
             context.setSendZuulResponse(false);
             context.setResponseStatusCode(403);
+            logger.error("非法访问，未登录，地址：{}", request.getRemoteHost());
             logger.error("非法访问，未登录，地址：{}", request.getRemoteHost(), e);
         }
         return null;

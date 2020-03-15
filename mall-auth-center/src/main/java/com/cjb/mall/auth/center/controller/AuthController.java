@@ -1,6 +1,7 @@
 package com.cjb.mall.auth.center.controller;
 
 import com.cjb.mall.auth.center.service.AuthService;
+import com.cjb.mall.auth.center.vo.LoginInfoVo;
 import com.cjb.mall.common.result.ResultUtils;
 import com.cjb.mall.common.result.ResultVO;
 import com.cjb.mall.common.utils.CookieUtils;
@@ -32,15 +33,28 @@ public class AuthController {
         if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(pwd)){
             return ResultUtils.error("参数错误！");
         }
-        String token = authService.login(phone, pwd);
-        System.out.println("token:"+token);
-        return ResultUtils.ok(token);
+        LoginInfoVo vo = authService.login(phone, pwd);
+        System.out.println("token:"+vo.getToken());
+        System.out.println("refreshToken:"+vo.getRefreshToken());
+        return ResultUtils.ok(vo);
+    }
+
+    /**
+     * 刷新token
+     * @param refreshToken
+     * @return
+     */
+    @PostMapping("refreshToken")
+    public ResultVO refreshToken(String refreshToken) {
+        LoginInfoVo loginInfoVo = authService.refreshToken(refreshToken);
+        System.out.println(loginInfoVo.getToken());
+        System.out.println(loginInfoVo.getRefreshToken());
+        return ResultUtils.ok(loginInfoVo);
     }
 
 
     /**
      * 注销登录
-     *
      * @param token
      * @return
      */

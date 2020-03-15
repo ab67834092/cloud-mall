@@ -1,5 +1,7 @@
 package com.cjb.mall.auth.center.service;
 
+import com.cjb.mall.auth.center.vo.LoginInfoVo;
+
 public interface AuthService {
 
 
@@ -9,5 +11,12 @@ public interface AuthService {
      * @param pwd
      * @return
      */
-    String login(String phone, String pwd);
+    LoginInfoVo login(String phone, String pwd);
+
+    /**
+     * 刷新token
+     * @param refreshToken
+     * @return
+     */
+    LoginInfoVo refreshToken(String refreshToken);
 }

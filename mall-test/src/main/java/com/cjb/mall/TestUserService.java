@@ -117,7 +117,8 @@ public class TestUserService {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         try{
             HttpPost httpPost = new HttpPost("http://localhost:10010/api/auth/logout");
-            httpPost.setHeader("token","eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiIxODYyMjM1ODU0MCIsImV4cCI6MTU4NDIzNjQzOH0.AlqMVPs-8cLu7Cs3A9uOAgqhKgzd8KOpyojF574xCEQT9Yj54WbVIyrWLhOgMid3EL6ZYmJt2ilJvw75ZtkX7TR_3P8PYVih-SbsGrIcO_mZyLpKbghkiPcqZnTO3pR4BxYb5FMjQNDkoXpjfMRf1o4ylL9crs2dPBWc0NpkPMQ");
+//            httpPost.setHeader("token","eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiIxODYyMjM1ODU0MCIsImV4cCI6MTU4NDIzNjQzOH0.AlqMVPs-8cLu7Cs3A9uOAgqhKgzd8KOpyojF574xCEQT9Yj54WbVIyrWLhOgMid3EL6ZYmJt2ilJvw75ZtkX7TR_3P8PYVih-SbsGrIcO_mZyLpKbghkiPcqZnTO3pR4BxYb5FMjQNDkoXpjfMRf1o4ylL9crs2dPBWc0NpkPMQ");
+            httpPost.setHeader("token","7887");
             // 执行请求
             HttpResponse resp  = httpClient.execute(httpPost);
             if(resp.getStatusLine().getStatusCode() == 200) {

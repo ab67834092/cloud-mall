@@ -21,6 +21,8 @@ public class JwtConfig {
 
     private Integer expire;
 
+    private Integer refreshExpire;
+
     private String cookieName;
 
     private PrivateKey privateKey;
@@ -28,6 +30,14 @@ public class JwtConfig {
     private PublicKey publicKey;
 
     private int cookieMaxAge;
+
+    public Integer getRefreshExpire() {
+        return refreshExpire;
+    }
+
+    public void setRefreshExpire(Integer refreshExpire) {
+        this.refreshExpire = refreshExpire;
+    }
 
     public String getSecret() {
         return secret;
