@@ -30,9 +30,6 @@ public class AuthController {
     @PostMapping("login")
     public ResultVO login(String phone, String pwd, HttpServletRequest request,
                           HttpServletResponse response) {
-        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(pwd)){
-            return ResultUtils.error("参数错误！");
-        }
         LoginInfoVo vo = authService.login(phone, pwd);
         System.out.println("token:"+vo.getToken());
         System.out.println("refreshToken:"+vo.getRefreshToken());

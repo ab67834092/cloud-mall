@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a1ebcf94-ad78-403a-b8fa-2f24247d3ccb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-user/target/" />
     <ignored path="$PROJECT_DIR$/mall-user/mall-user-service/target/" />
@@ -103,8 +102,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="33" />
-          <entry key="java" value="113" />
-          <entry key="properties" value="33" />
+          <entry key="java" value="115" />
+          <entry key="properties" value="34" />
           <entry key="xml" value="13" />
           <entry key="yml" value="3" />
         </counts>
@@ -112,15 +111,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="33" />
-          <entry key="JAVA" value="113" />
-          <entry key="Properties" value="33" />
+          <entry key="JAVA" value="115" />
+          <entry key="Properties" value="34" />
           <entry key="XML" value="13" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1752" />
+          <entry key="java" value="1755" />
           <entry key="properties" value="323" />
           <entry key="xml" value="24" />
           <entry key="yml" value="21" />
@@ -128,7 +127,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1752" />
+          <entry key="JAVA" value="1755" />
           <entry key="Properties" value="323" />
           <entry key="XML" value="24" />
           <entry key="YAML" value="21" />
@@ -138,95 +137,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-791">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/exception/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/http/HttpStatus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="125">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -304,12 +219,12 @@
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/user/UserInfo.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/JwtUtils.java" />
         <option value="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/AuthService.java" />
-        <option value="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultUtils.java" />
         <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java" />
         <option value="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java" />
         <option value="$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -369,28 +284,7 @@
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-auth-center" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +299,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584256529905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584262146448" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -569,7 +463,7 @@
       <workItem from="1584087490929" duration="2049000" />
       <workItem from="1584149162405" duration="15041000" />
       <workItem from="1584173535080" duration="15802000" />
-      <workItem from="1584232914467" duration="10667000" />
+      <workItem from="1584232914467" duration="12056000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1583729163377</created>
@@ -620,16 +514,17 @@
       <option name="project" value="LOCAL" />
       <updated>1584254267334</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改">
+      <created>1584256570588</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584256570588</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 02m 55s.xml">
-      <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 03m 30s.xml">
-      <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 04m 39s.xml">
       <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
     </history-entry>
@@ -654,13 +549,18 @@
     <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 10m 50s.xml">
       <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 15m 16s.xml">
+      <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestUserService_testRefreshToken - 2020.03.15 at 15h 15m 32s.xml">
+      <configuration name="TestUserService.testRefreshToken" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90421000" />
+    <option name="totallyTimeSpent" value="91810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1290" height="688" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28003246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -673,7 +573,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49837664" weight="0.8381295" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5900974" visible="true" weight="0.5845324" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5900974" weight="0.5845324" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -717,12 +617,6 @@
           <line>99</line>
           <properties />
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/filter/LoginFilter.java</url>
@@ -1070,31 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -1119,20 +992,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
+        <state relative-caret-position="59">
+          <caret line="150" column="30" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="103">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/java/com/cjb/mall/auth/center/service/impl/AuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-auth-center/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>

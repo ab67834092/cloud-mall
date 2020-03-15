@@ -5,6 +5,7 @@ import com.cjb.mall.auth.center.config.JwtConfig;
 import com.cjb.mall.auth.center.service.AuthService;
 import com.cjb.mall.auth.center.vo.LoginInfoVo;
 import com.cjb.mall.common.exception.BizException;
+import com.cjb.mall.common.result.ResultUtils;
 import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.JwtUtils;
 import com.cjb.mall.user.vo.UserVo;
@@ -26,6 +27,9 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public LoginInfoVo login(String phone, String pwd) {
+        if(StringUtils.isEmpty(phone) || StringUtils.isEmpty(pwd)){
+            throw new BizException("参数错误！");
+        }
         UserVo userVo = userClient.queryUser(phone, pwd);
         if(userVo==null){
             throw new BizException("用户名或密码错误！");
