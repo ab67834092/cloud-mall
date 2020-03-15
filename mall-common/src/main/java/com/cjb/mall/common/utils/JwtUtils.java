@@ -86,7 +86,7 @@ public class JwtUtils {
         Claims body = claimsJws.getBody();
         String id = body.get(JWT_KEY_ID).toString();
         String name = body.get(JWT_KEY_USER_NAME).toString();
-        return new UserInfo(Integer.valueOf(id), name);
+        return new UserInfo(Integer.valueOf(id), name,body.getExpiration());
     }
 
     /**

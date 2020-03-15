@@ -9,6 +9,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpHeaders;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,6 +90,34 @@ public class TestUserService {
             pairList.add(new BasicNameValuePair("pwd", "123456"));
             HttpPost httpPost = new HttpPost("http://localhost:10010/api/auth/login");
             httpPost.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));
+            // 执行请求
+            HttpResponse resp  = httpClient.execute(httpPost);
+            if(resp.getStatusLine().getStatusCode() == 200) {
+                HttpEntity he = resp.getEntity();
+                System.out.println(EntityUtils.toString(he,"UTF-8"));
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (httpClient != null) {
+                    httpClient.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 测试是否可以获取JWT
+     */
+    @Test
+    public void testGetJWT(){
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        try{
+            HttpPost httpPost = new HttpPost("http://localhost:10010/api/auth/logout");
+            httpPost.setHeader("token","eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiIxODYyMjM1ODU0MCIsImV4cCI6MTU4NDIzNjQzOH0.AlqMVPs-8cLu7Cs3A9uOAgqhKgzd8KOpyojF574xCEQT9Yj54WbVIyrWLhOgMid3EL6ZYmJt2ilJvw75ZtkX7TR_3P8PYVih-SbsGrIcO_mZyLpKbghkiPcqZnTO3pR4BxYb5FMjQNDkoXpjfMRf1o4ylL9crs2dPBWc0NpkPMQ");
             // 执行请求
             HttpResponse resp  = httpClient.execute(httpPost);
             if(resp.getStatusLine().getStatusCode() == 200) {

@@ -143,7 +143,8 @@ public class UserServiceImpl implements UserService {
             throw new BizException("密码不正确");
         }
         UserVo userVo = new UserVo();
-
+        userVo.setId(userByParam.getId());
+        userVo.setTelephone(userByParam.getTelephone());
         return userVo;
     }
 

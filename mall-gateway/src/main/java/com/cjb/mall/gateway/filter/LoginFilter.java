@@ -1,11 +1,14 @@
 package com.cjb.mall.gateway.filter;
 
+import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.CookieUtils;
 import com.cjb.mall.common.utils.JwtUtils;
 import com.cjb.mall.gateway.properties.FilterProperties;
 import com.cjb.mall.gateway.properties.JwtProperties;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,8 +72,12 @@ public class LoginFilter extends ZuulFilter {
         }
         try {
             //从Token获取解析用户信息
-            JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
+            UserInfo userInfo = JwtUtils.getUserInfo(jwtProperties.getPublicKey(), token);
             //解析成功，什么都不做，放行
+            System.out.println(userInfo.getId());
+            System.out.println(userInfo.getName());
+            System.out.println(userInfo.getTokenExpire());
+
 
             //todo 如果做权限管理的话，在这做权限检验
         } catch (Exception e) {

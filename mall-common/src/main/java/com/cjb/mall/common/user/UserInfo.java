@@ -1,9 +1,12 @@
 package com.cjb.mall.common.user;
 
+import java.util.Date;
+
 public class UserInfo {
 
     private Integer id;
     private String name;
+    private Date tokenExpire;
 
     public UserInfo() {
     }
@@ -11,6 +14,20 @@ public class UserInfo {
     public UserInfo(Integer id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public UserInfo(Integer id, String name, Date tokenExpire) {
+        this.id = id;
+        this.name = name;
+        this.tokenExpire = tokenExpire;
+    }
+
+    public Date getTokenExpire() {
+        return tokenExpire;
+    }
+
+    public void setTokenExpire(Date tokenExpire) {
+        this.tokenExpire = tokenExpire;
     }
 
     public Integer getId() {
