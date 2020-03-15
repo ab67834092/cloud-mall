@@ -1,5 +1,8 @@
 package com.cjb.mall.gateway.filter;
 
+import com.alibaba.fastjson.JSON;
+import com.cjb.mall.common.result.ResultUtils;
+import com.cjb.mall.common.result.ResultVO;
 import com.cjb.mall.common.user.UserInfo;
 import com.cjb.mall.common.utils.CookieUtils;
 import com.cjb.mall.common.utils.JwtUtils;
@@ -20,6 +23,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -78,12 +84,12 @@ public class LoginFilter extends ZuulFilter {
             //todo 如果做权限管理的话，在这做权限检验
         }catch (ExpiredJwtException e){
             context.setSendZuulResponse(false);
-            context.setResponseStatusCode(403);
+            responseError(context,new ResultVO(999,"token失效了"));
             logger.error("token失效了");
         } catch (Exception e) {
             //检验出现异常，返回403
             context.setSendZuulResponse(false);
-            context.setResponseStatusCode(403);
+            responseError(context,new ResultVO(-1,"非法访问"));
             logger.error("非法访问，未登录，地址：{}", request.getRemoteHost());
             logger.error("非法访问，未登录，地址：{}", request.getRemoteHost(), e);
         }
@@ -104,7 +110,23 @@ public class LoginFilter extends ZuulFilter {
             flag = true;
         }
         return flag;
+    }
 
-
+    private void responseError(RequestContext context, ResultVO resultVO){
+        HttpServletResponse httpResponse = (HttpServletResponse) context.getResponse();
+        httpResponse.setCharacterEncoding("UTF-8");
+        httpResponse.setContentType("text/html; charset=utf-8");
+        PrintWriter writer=null;
+        try {
+            writer=httpResponse.getWriter();
+            writer.write(JSON.toJSONString(resultVO));
+            writer.flush();
+        } catch (IOException eio) {
+            logger.info("unauthorized--error:",eio);
+        }finally {
+            if(writer!=null) {
+                writer.close();
+            }
+        }
     }
 }

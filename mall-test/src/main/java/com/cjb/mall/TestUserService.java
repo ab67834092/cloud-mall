@@ -117,8 +117,8 @@ public class TestUserService {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         try{
             HttpPost httpPost = new HttpPost("http://localhost:10010/api/auth/logout");
-//            httpPost.setHeader("token","eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiIxODYyMjM1ODU0MCIsImV4cCI6MTU4NDIzNjQzOH0.AlqMVPs-8cLu7Cs3A9uOAgqhKgzd8KOpyojF574xCEQT9Yj54WbVIyrWLhOgMid3EL6ZYmJt2ilJvw75ZtkX7TR_3P8PYVih-SbsGrIcO_mZyLpKbghkiPcqZnTO3pR4BxYb5FMjQNDkoXpjfMRf1o4ylL9crs2dPBWc0NpkPMQ");
-            httpPost.setHeader("token","7887");
+            httpPost.setHeader("token","eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiIxODYyMjM1ODU0MCIsImV4cCI6MTU4NDIzNjQzOH0.AlqMVPs-8cLu7Cs3A9uOAgqhKgzd8KOpyojF574xCEQT9Yj54WbVIyrWLhOgMid3EL6ZYmJt2ilJvw75ZtkX7TR_3P8PYVih-SbsGrIcO_mZyLpKbghkiPcqZnTO3pR4BxYb5FMjQNDkoXpjfMRf1o4ylL9crs2dPBWc0NpkPMQ");
+//            httpPost.setHeader("token","7887");
             // 执行请求
             HttpResponse resp  = httpClient.execute(httpPost);
             if(resp.getStatusLine().getStatusCode() == 200) {
@@ -137,4 +137,36 @@ public class TestUserService {
             }
         }
     }
+
+    /**
+     * 测试刷新token
+     */
+    @Test
+    public void testRefreshToken(){
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        try{
+            HttpPost httpPost = new HttpPost("http://localhost:10010/api/auth/refreshToken");
+            List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();
+//            pairList.add(new BasicNameValuePair("refreshToken", "eyJhbGciOiJSUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNTg2ODQ3NjM5fQ.I5z6Mv-v0DcwzoS_c4G23-MlPoDt0nA0pmF5GJ7ZjD7y8qzuEubPBrEl35_gIeq1aVDdchwHh9okLsF4nQH8E6k8nJfyM_pTbuuYKeL8RTGnHNFPWdLifBGT6Ut7Gek0jC6mRsH13qkDs_F-E8elk2mYPDZ4UDizEbLo1WSjWss"));
+            pairList.add(new BasicNameValuePair("refreshToken", "Q.I5z6Mv-v0DcwzoS_c4G23-MlPoDt0nA0pmF5GJ7ZjD7y8qzuEubPBrEl35_gIeq1aVDdchwHh9okLsF4nQH8E6k8nJfyM_pTbuuYKeL8RTGnHNFPWdLifBGT6Ut7Gek0jC6mRsH13qkDs_F-E8elk2mYPDZ4UDizEbLo1WSjWss"));
+            httpPost.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));
+            // 执行请求
+            HttpResponse resp  = httpClient.execute(httpPost);
+            if(resp.getStatusLine().getStatusCode() == 200) {
+                HttpEntity he = resp.getEntity();
+                System.out.println(EntityUtils.toString(he,"UTF-8"));
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (httpClient != null) {
+                    httpClient.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
