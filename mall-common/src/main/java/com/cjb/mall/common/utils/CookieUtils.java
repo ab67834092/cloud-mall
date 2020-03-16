@@ -1,9 +1,8 @@
 package com.cjb.mall.common.utils;
 
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -97,13 +96,13 @@ public final class CookieUtils {
 
         public void build(String cookieName, String cookieValue) {
             try {
-                if (StringUtils.isBlank(charset)) {
+                if (StringUtils.isEmpty(charset)) {
                     charset = "utf-8";
                 }
 
                 if (cookieValue == null) {
                     cookieValue = "";
-                } else if (StringUtils.isNotBlank(charset)) {
+                } else if (!StringUtils.isEmpty(charset)) {
                     cookieValue = URLEncoder.encode(cookieValue, charset);
                 }
                 Cookie cookie = new Cookie(cookieName, cookieValue);

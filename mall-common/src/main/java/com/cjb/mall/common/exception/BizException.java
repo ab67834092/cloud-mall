@@ -1,10 +1,5 @@
 package com.cjb.mall.common.exception;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
 public class BizException extends RuntimeException{
 
 	/**
