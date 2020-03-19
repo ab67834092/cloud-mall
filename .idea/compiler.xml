@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mall-auth-center" />
         <module name="mall-common" />
+        <module name="mall-elastic-job" />
+        <module name="mall-elasticsearch" />
         <module name="mall-eureka-server" />
         <module name="mall-gateway" />
         <module name="mall-sms-service" />
@@ -20,6 +22,8 @@
       <module name="mall" target="1.8" />
       <module name="mall-auth-center" target="1.8" />
       <module name="mall-common" target="1.8" />
+      <module name="mall-elastic-job" target="1.8" />
+      <module name="mall-elasticsearch" target="1.8" />
       <module name="mall-eureka-server" target="1.8" />
       <module name="mall-gateway" target="1.8" />
       <module name="mall-sms-service" target="1.8" />

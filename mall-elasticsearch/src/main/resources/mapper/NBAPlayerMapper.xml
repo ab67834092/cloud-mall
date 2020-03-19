@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjb.mall.elasticsearch.mapper.NBAPlayerMapper" >
+  <resultMap id="BaseResultMap" type="com.cjb.mall.elasticsearch.po.NBAPlayer" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="countryEn" property="countryEn" jdbcType="VARCHAR" />
+    <result column="teamName" property="teamName" jdbcType="VARCHAR" />
+    <result column="birthDay" property="birthDay" jdbcType="BIGINT" />
+    <result column="country" property="country" jdbcType="VARCHAR" />
+    <result column="teamCityEn" property="teamCityEn" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="displayAffiliation" property="displayAffiliation" jdbcType="VARCHAR" />
+    <result column="displayName" property="displayName" jdbcType="VARCHAR" />
+    <result column="schoolType" property="schoolType" jdbcType="VARCHAR" />
+    <result column="teamConference" property="teamConference" jdbcType="VARCHAR" />
+    <result column="teamConferenceEn" property="teamConferenceEn" jdbcType="VARCHAR" />
+    <result column="weight" property="weight" jdbcType="VARCHAR" />
+    <result column="teamCity" property="teamCity" jdbcType="VARCHAR" />
+    <result column="playYear" property="playYear" jdbcType="INTEGER" />
+    <result column="jerseyNo" property="jerseyNo" jdbcType="VARCHAR" />
+    <result column="teamNameEn" property="teamNameEn" jdbcType="VARCHAR" />
+    <result column="draft" property="draft" jdbcType="INTEGER" />
+    <result column="displayNameEn" property="displayNameEn" jdbcType="VARCHAR" />
+    <result column="birthDayStr" property="birthDayStr" jdbcType="VARCHAR" />
+    <result column="heightValue" property="heightValue" jdbcType="DECIMAL" />
+    <result column="position" property="position" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <result column="playerId" property="playerId" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, countryEn, teamName, birthDay, country, teamCityEn, code, displayAffiliation, 
+    displayName, schoolType, teamConference, teamConferenceEn, weight, teamCity, playYear, 
+    jerseyNo, teamNameEn, draft, displayNameEn, birthDayStr, heightValue, position, age, 
+    playerId
+  </sql>
+  <select id="selectAll" resultMap="BaseResultMap"  >
+    select
+    <include refid="Base_Column_List" />
+    from nba_player_t
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from nba_player_t
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from nba_player_t
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cjb.mall.elasticsearch.po.NBAPlayer" >
+    insert into nba_player_t (id, countryEn, teamName, 
+      birthDay, country, teamCityEn, 
+      code, displayAffiliation, displayName, 
+      schoolType, teamConference, teamConferenceEn, 
+      weight, teamCity, playYear, 
+      jerseyNo, teamNameEn, draft, 
+      displayNameEn, birthDayStr, heightValue, 
+      position, age, playerId
+      )
+    values (#{id,jdbcType=INTEGER}, #{countryEn,jdbcType=VARCHAR}, #{teamName,jdbcType=VARCHAR},
+      #{birthDay,jdbcType=BIGINT}, #{country,jdbcType=VARCHAR}, #{teamCityEn,jdbcType=VARCHAR},
+      #{code,jdbcType=VARCHAR}, #{displayAffiliation,jdbcType=VARCHAR}, #{displayName,jdbcType=VARCHAR},
+      #{schoolType,jdbcType=VARCHAR}, #{teamConference,jdbcType=VARCHAR}, #{teamConferenceEn,jdbcType=VARCHAR},
+      #{weight,jdbcType=VARCHAR}, #{teamCity,jdbcType=VARCHAR}, #{playYear,jdbcType=INTEGER},
+      #{jerseyNo,jdbcType=VARCHAR}, #{teamNameEn,jdbcType=VARCHAR}, #{draft,jdbcType=INTEGER},
+      #{displayNameEn,jdbcType=VARCHAR}, #{birthDayStr,jdbcType=VARCHAR}, #{heightValue,jdbcType=DECIMAL},
+      #{position,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{playerId,jdbcType=VARCHAR}
+      )
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="com.cjb.mall.elasticsearch.po.NBAPlayer" >
+    update nba_player_t
+    set countryEn = #{countryEn,jdbcType=VARCHAR},
+      teamName = #{teamName,jdbcType=VARCHAR},
+      birthDay = #{birthDay,jdbcType=BIGINT},
+      country = #{country,jdbcType=VARCHAR},
+      teamCityEn = #{teamCityEn,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      displayAffiliation = #{displayAffiliation,jdbcType=VARCHAR},
+      displayName = #{displayName,jdbcType=VARCHAR},
+      schoolType = #{schoolType,jdbcType=VARCHAR},
+      teamConference = #{teamConference,jdbcType=VARCHAR},
+      teamConferenceEn = #{teamConferenceEn,jdbcType=VARCHAR},
+      weight = #{weight,jdbcType=VARCHAR},
+      teamCity = #{teamCity,jdbcType=VARCHAR},
+      playYear = #{playYear,jdbcType=INTEGER},
+      jerseyNo = #{jerseyNo,jdbcType=VARCHAR},
+      teamNameEn = #{teamNameEn,jdbcType=VARCHAR},
+      draft = #{draft,jdbcType=INTEGER},
+      displayNameEn = #{displayNameEn,jdbcType=VARCHAR},
+      birthDayStr = #{birthDayStr,jdbcType=VARCHAR},
+      heightValue = #{heightValue,jdbcType=DECIMAL},
+      position = #{position,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      playerId = #{playerId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

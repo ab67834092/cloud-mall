@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/mall-user/pom.xml" />
         <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/mall-auth-center/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-elasticsearch/pom.xml" />
       </list>
     </option>
   </component>
