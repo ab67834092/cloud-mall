@@ -22,5 +22,12 @@ public interface NBAPlayerService {
 
     void deleteIndex() throws IOException;
 
+
     List<NBAPlayer> searchMatch(String key, String value)throws IOException;
+
+    //关键字匹配
+    List<NBAPlayer> searchTerm(String key,String value) throws IOException;
+
+    //带有指定前缀term的文档
+    List<NBAPlayer> searchMatchPrefix(String key,String value) throws IOException;
 }

@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.cjb.mall.elasticsearch.mapper.NBAPlayerMapper;
 import com.cjb.mall.elasticsearch.po.NBAPlayer;
 import com.cjb.mall.elasticsearch.service.NBAPlayerService;
-import net.sf.jsqlparser.statement.create.table.Index;
-import org.elasticsearch.action.admin.cluster.state.ClusterStateResponse;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.delete.DeleteResponse;
@@ -29,7 +27,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.beans.BeanMap;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -117,6 +114,46 @@ public class NBAPlayerServiceImpl implements NBAPlayerService {
         return playerList;
     }
 
+    @Override
+    public List<NBAPlayer> searchTerm(String key,String value) throws IOException {
+        SearchRequest searchRequest = new SearchRequest("nba");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(QueryBuilders.termQuery(key,value));
+        searchSourceBuilder.from(0);
+        searchSourceBuilder.size(1000);
+        searchRequest.source(searchSourceBuilder);
+        SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
+        System.out.println(JSONObject.toJSON(response));
+
+        SearchHit[] hits = response.getHits().getHits();
+        List<NBAPlayer> playerList = new ArrayList<>();
+        for(SearchHit hit: hits){
+            NBAPlayer player = JSONObject.parseObject(hit.getSourceAsString(),NBAPlayer.class);
+            playerList.add(player);
+        }
+        return playerList;
+    }
+
+    @Override
+    public List<NBAPlayer> searchMatchPrefix(String key,String value) throws IOException {
+        SearchRequest searchRequest = new SearchRequest("nba");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(QueryBuilders.prefixQuery(key,value));
+        searchSourceBuilder.from(0);
+        searchSourceBuilder.size(1000);
+        searchRequest.source(searchSourceBuilder);
+        SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
+        System.out.println(JSONObject.toJSON(response));
+
+        SearchHit[] hits = response.getHits().getHits();
+        List<NBAPlayer> playerList = new ArrayList<>();
+        for(SearchHit hit: hits){
+            NBAPlayer player = JSONObject.parseObject(hit.getSourceAsString(),NBAPlayer.class);
+            playerList.add(player);
+        }
+
+        return playerList;
+    }
 
     public static <T> Map<String, Object> beanToMap(T bean) {
         Map<String, Object> map = new HashMap<>();
