@@ -29,6 +29,16 @@ public class NBAPlayerController {
         return ResultUtils.ok();
     }
 
+    @RequestMapping("/deleteAllPlayer")
+    public ResultVO deleteAllPlayer(){
+        try {
+            nbaPlayerService.deleteAllPlayer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return ResultUtils.ok();
+    }
+
     @RequestMapping("/searchMatch")
     public List<NBAPlayer> searchMatch(@RequestParam(value = "displayNameEn", required = false) String displayNameEn) {
         try {

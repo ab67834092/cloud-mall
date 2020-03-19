@@ -17,8 +17,10 @@ import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.index.query.MatchAllQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
 import org.elasticsearch.index.reindex.BulkByScrollResponse;
 import org.elasticsearch.index.reindex.DeleteByQueryRequest;
 import org.elasticsearch.search.SearchHit;
@@ -83,6 +85,7 @@ public class NBAPlayerServiceImpl implements NBAPlayerService {
     @Override
     public boolean deleteAllPlayer() throws IOException {
         DeleteByQueryRequest request = new DeleteByQueryRequest("nba");
+        request.setQuery(new MatchAllQueryBuilder());
         BulkByScrollResponse response = client.deleteByQuery(request, RequestOptions.DEFAULT);
         System.out.println(JSONObject.toJSON(response));
         return true;
