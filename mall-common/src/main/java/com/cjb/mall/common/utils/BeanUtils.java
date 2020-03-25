@@ -1,9 +1,13 @@
 package com.cjb.mall.common.utils;
 
+import com.cjb.mall.common.user.UserInfo;
+
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class BeanUtils {
 
@@ -70,6 +74,32 @@ public class BeanUtils {
             sb.append(");");
             System.out.println(sb.toString());
         }
+    }
+
+    public static void main(String[] args) {
+        UserInfo user = new UserInfo();
+        generateBeanSetCode(user);
+        System.out.println("=====================");
+        generateBeanSetCodeNoGet(user);
+        System.out.println("=====================");
+        UserInfo userInfo = new UserInfo(1,"zhangsan",new Date());
+        UserInfo userInfo1 = new UserInfo(2,"lisi",new Date());
+        List<UserInfo> db = new ArrayList();
+        db.add(userInfo);
+        db.add(userInfo1);
+
+        List<UserInfo> list = new ArrayList();
+        list = db;
+        System.out.println(list.toString());
+
+        List<UserInfo> list2;
+        try{
+            list2 = db;
+            System.out.println(list2.toString());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
 }
