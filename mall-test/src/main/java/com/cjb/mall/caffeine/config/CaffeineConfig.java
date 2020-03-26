@@ -15,7 +15,7 @@ public class CaffeineConfig {
     private static final int CACHE_MAX_SIZE=1000;
 
     //最后一次写入后多长时间失效
-    private static final int CACHE_EXPIRE_TIME_MINUTES = 3;
+    private static final int CACHE_EXPIRE_TIME_MINUTES = 1;
 
     @Bean(name = "productCache")
     public Cache ProductCache(){
