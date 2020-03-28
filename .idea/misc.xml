@@ -19,6 +19,9 @@
         <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/mall-auth-center/pom.xml" />
         <option value="$PROJECT_DIR$/mall-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" />
       </list>
     </option>
   </component>

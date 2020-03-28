@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/mall-elasticsearch/mall-elasticsearch.iml" filepath="$PROJECT_DIR$/mall-elasticsearch/mall-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" filepath="$PROJECT_DIR$/mall-eureka-server/mall-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq.iml" filepath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/mall-rocketmq-consumer.iml" filepath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/mall-rocketmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/mall-rocketmq-producer.iml" filepath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/mall-rocketmq-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" filepath="$PROJECT_DIR$/mall-sms-service/mall-sms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-test/mall-test.iml" filepath="$PROJECT_DIR$/mall-test/mall-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-user/mall-user.iml" filepath="$PROJECT_DIR$/mall-user/mall-user.iml" />

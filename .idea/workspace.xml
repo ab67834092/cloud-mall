@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1ebcf94-ad78-403a-b8fa-2f24247d3ccb" name="Default Changelist" comment="修改">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_client_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_high_level_client_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_cli_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_core_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_geo_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_secure_sm_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_x_content_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_aggs_matrix_stats_client_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_lang_mustache_client_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_parent_join_client_7_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_rank_eval_client_7_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-user/mall-user-interface/src/main/java/com/cjb/mall/user/rocket/ProducerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-test/mall-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-test/mall-test.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-user/target/" />
     <ignored path="$PROJECT_DIR$/mall-user/mall-user-service/target/" />
@@ -31,6 +21,9 @@
     <ignored path="$PROJECT_DIR$/mall-test/target/" />
     <ignored path="$PROJECT_DIR$/mall-elastic-job/target/" />
     <ignored path="$PROJECT_DIR$/mall-elasticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/mall-rocketmq/target/" />
+    <ignored path="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/target/" />
+    <ignored path="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,59 +100,60 @@
     <session id="-1155681238">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.145" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="50" />
+          <entry key="class" value="52" />
           <entry key="cmd" value="1" />
-          <entry key="gitignore" value="4" />
-          <entry key="java" value="223" />
+          <entry key="gitignore" value="10" />
+          <entry key="java" value="244" />
           <entry key="pom" value="2" />
           <entry key="properties" value="44" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="50" />
+          <entry key="xml" value="65" />
           <entry key="xsd" value="1" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="50" />
-          <entry key="JAVA" value="223" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="CLASS" value="52" />
+          <entry key="JAVA" value="244" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="44" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="53" />
+          <entry key="XML" value="68" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4350" />
+          <entry key="java" value="4786" />
           <entry key="properties" value="381" />
-          <entry key="xml" value="396" />
+          <entry key="xml" value="423" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4350" />
+          <entry key="JAVA" value="4786" />
           <entry key="Properties" value="381" />
-          <entry key="XML" value="396" />
+          <entry key="XML" value="423" />
           <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
@@ -168,10 +162,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="321">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,28 +174,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="275">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="31" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="460">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplateImple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -227,6 +245,7 @@
       <find>test</find>
       <find>fast</find>
       <find>heightValue</find>
+      <find>amqpTemplate</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -238,19 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CodecUtils.java" />
-        <option value="$PROJECT_DIR$/mall-user/mall-user-interface/src/test/java/com/cjb/mall/MallUserInterfaceApplicationTests.java" />
-        <option value="$PROJECT_DIR$/mall-auth-center/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/MallSmsServiceApplication.java" />
-        <option value="$PROJECT_DIR$/mall-sms-service/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/listener/RegSmsListener.java" />
-        <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/mall/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-common/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-gateway/src/main/java/com/cjb/mall/gateway/properties/FilterProperties.java" />
-        <option value="$PROJECT_DIR$/mall-user/mall-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-elastic-job/pom.xml" />
         <option value="$PROJECT_DIR$/mall-elastic-job/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/config/ElasticJobConfig.java" />
         <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/config/ElasticJobRegistryCenterConfig.java" />
@@ -289,6 +295,19 @@
         <option value="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java" />
         <option value="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java" />
         <option value="$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/.gitignore" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/.gitignore" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/.gitignore" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/mqTemplate.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplication.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/test/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplateImple.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java" />
       </list>
     </option>
   </component>
@@ -339,6 +358,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,13 +366,135 @@
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,7 +504,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585182259885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585371415434" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -400,7 +542,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallTestApplication">
+  <component name="RunManager" selected="Spring Boot.MallRocketmqProducerApplication">
     <configuration name="BeanUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cjb.mall.common.utils.BeanUtils" />
       <module name="mall-common" />
@@ -477,6 +619,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallRocketmqProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-rocketmq-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.rocketmq.producer.MallRocketmqProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall-test" />
       <extension name="coverage">
@@ -499,6 +648,7 @@
       <item itemvalue="Application.ProducerTest" />
       <item itemvalue="Spring Boot.MallTestApplication" />
       <item itemvalue="Spring Boot.MallEurekaServerApplication" />
+      <item itemvalue="Spring Boot.MallRocketmqProducerApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -541,6 +691,9 @@
       <workItem from="1585104620049" duration="11537000" />
       <workItem from="1585127327732" duration="3461000" />
       <workItem from="1585181389391" duration="864000" />
+      <workItem from="1585321339312" duration="644000" />
+      <workItem from="1585356229300" duration="60000" />
+      <workItem from="1585359265750" duration="8433000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1583729163377</created>
@@ -683,7 +836,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147567000" />
+    <option name="totallyTimeSpent" value="156704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,7 +851,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33225545" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34923202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -706,7 +859,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49756494" weight="0.8365897" />
@@ -724,6 +876,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="MyBatis Log" order="15" />
       <window_info anchor="bottom" id="Log4jMonitor" order="16" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -762,6 +915,12 @@
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -795,164 +954,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall-elasticsearch/src/main/java/com/cjb/mall/elasticsearch/service/NBAPlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-elasticsearch/src/main/java/com/cjb/mall/elasticsearch/service/impl/NBAPlayerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2912">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/BeanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="84" column="50" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/user/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/MallUserServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1117#1144#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-interface/src/main/java/com/cjb/mall/user/rocket/ProducerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ons-client/1.8.4.Final/ons-client-1.8.4.Final.jar!/com/aliyun/openservices/ons/api/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/key/UserCacheKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/JwtUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/ProductCache.java" />
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/CaffeineTemplate.java" />
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/Caffeine.java" />
-    <entry file="file://$PROJECT_DIR$/mall/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="183" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-855">
@@ -967,20 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/MallEurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -1001,13 +988,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java" />
     <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java" />
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/caffeine/2.8.1/caffeine-2.8.1.jar!/com/github/benmanes/caffeine/cache/Cache.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1033,13 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="42" column="21" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1074,34 +1047,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java">
+    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="625">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="350">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/controller/CaffeineController.java">
+    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="13" column="31" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.8.RELEASE/spring-amqp-2.0.8.RELEASE.jar!/org/springframework/amqp/core/AmqpTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-user/mall-user-service/src/main/java/com/cjb/mall/user/service/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/user/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/utils/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1622">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/redis/template/CacheTemplateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/cjb/mall/common/result/ResultCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/MallEurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-elasticsearch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="16" column="27" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/test/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplateImple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

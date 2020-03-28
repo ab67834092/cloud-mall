@@ -12,6 +12,8 @@
         <module name="mall-elasticsearch" />
         <module name="mall-eureka-server" />
         <module name="mall-gateway" />
+        <module name="mall-rocketmq-consumer" />
+        <module name="mall-rocketmq-producer" />
         <module name="mall-sms-service" />
         <module name="mall-test" />
         <module name="mall-user-interface" />
@@ -26,6 +28,9 @@
       <module name="mall-elasticsearch" target="1.8" />
       <module name="mall-eureka-server" target="1.8" />
       <module name="mall-gateway" target="1.8" />
+      <module name="mall-rocketmq" target="1.8" />
+      <module name="mall-rocketmq-consumer" target="1.8" />
+      <module name="mall-rocketmq-producer" target="1.8" />
       <module name="mall-sms-service" target="1.8" />
       <module name="mall-test" target="1.8" />
       <module name="mall-user" target="1.8" />
