@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1ebcf94-ad78-403a-b8fa-2f24247d3ccb" name="Default Changelist" comment="修改">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-test/mall-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-test/mall-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/test/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/test/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mall-user/target/" />
     <ignored path="$PROJECT_DIR$/mall-user/mall-user-service/target/" />
@@ -121,11 +121,11 @@
           <entry key="class" value="52" />
           <entry key="cmd" value="1" />
           <entry key="gitignore" value="10" />
-          <entry key="java" value="244" />
+          <entry key="java" value="253" />
           <entry key="pom" value="2" />
-          <entry key="properties" value="44" />
+          <entry key="properties" value="45" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="65" />
+          <entry key="xml" value="66" />
           <entry key="xsd" value="1" />
           <entry key="yml" value="5" />
         </counts>
@@ -133,27 +133,27 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="52" />
-          <entry key="JAVA" value="244" />
+          <entry key="JAVA" value="253" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Properties" value="44" />
+          <entry key="Properties" value="45" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="68" />
+          <entry key="XML" value="69" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4786" />
-          <entry key="properties" value="381" />
-          <entry key="xml" value="423" />
+          <entry key="java" value="5053" />
+          <entry key="properties" value="394" />
+          <entry key="xml" value="426" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4786" />
-          <entry key="Properties" value="381" />
-          <entry key="XML" value="423" />
+          <entry key="JAVA" value="5053" />
+          <entry key="Properties" value="394" />
+          <entry key="XML" value="426" />
           <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
@@ -164,8 +164,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="235">
+              <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="52" column="70" selection-start-line="41" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/config/MqConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,10 +207,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer/HttpCommonMsg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="171">
+              <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/MallSmsServiceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="67" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/test/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,40 +251,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java">
+        <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/listener/RegSmsListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="125">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplateImple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="235">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -257,12 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-elastic-job/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/config/ElasticJobConfig.java" />
-        <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/config/ElasticJobRegistryCenterConfig.java" />
-        <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/task/Job1.java" />
-        <option value="$PROJECT_DIR$/mall-elastic-job/src/main/java/com/cjb/mall/elastic/job/task/Job2.java" />
-        <option value="$PROJECT_DIR$/mall-auth-center/.gitignore" />
         <option value="$PROJECT_DIR$/mall-elastic-job/.gitignore" />
         <option value="$PROJECT_DIR$/mall-elasticsearch/.gitignore" />
         <option value="$PROJECT_DIR$/mall-elasticsearch/src/main/java/com/cjb/mall/elasticsearch/config/EsConfig.java" />
@@ -299,15 +337,21 @@
         <option value="$PROJECT_DIR$/mall-rocketmq/pom.xml" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/.gitignore" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/.gitignore" />
-        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/mqTemplate.java" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplication.java" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/test/java/com/cjb/mall/rocketmq/producer/MallRocketmqProducerApplicationTests.java" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java" />
-        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplateImple.java" />
         <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/config/MqConfig.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer/HttpConsumerTest.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/test/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer/HttpCommonMsg.java" />
       </list>
     </option>
   </component>
@@ -350,6 +394,26 @@
     <option name="width" value="1947" />
     <option name="height" value="1107" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>InfiniteLoopStatement</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -369,25 +433,69 @@
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
               <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-rocketmq-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
@@ -458,36 +566,7 @@
               <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud-mall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud-mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-rocketmq-producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -504,7 +583,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585371415434" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585373642162" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -542,7 +621,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallRocketmqProducerApplication">
+  <component name="RunManager" selected="Spring Boot.MallRocketmqConsumerApplication">
     <configuration name="BeanUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cjb.mall.common.utils.BeanUtils" />
       <module name="mall-common" />
@@ -565,22 +644,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallElasticsearchApplicationTests.deleteAllPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cjb.mall.elasticsearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cjb.mall.elasticsearch" />
-      <option name="MAIN_CLASS_NAME" value="com.cjb.mall.elasticsearch.MallElasticsearchApplicationTests" />
-      <option name="METHOD_NAME" value="deleteAllPlayer" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -619,6 +682,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallRocketmqConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-rocketmq-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjb.mall.rocketmq.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.rocketmq.consumer.MallRocketmqConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallRocketmqProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-rocketmq-producer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cjb.mall.rocketmq.producer.MallRocketmqProducerApplication" />
@@ -643,20 +719,20 @@
       <item itemvalue="Spring Boot.MallGatewayApplication" />
       <item itemvalue="Spring Boot.MallAuthCenterApplication" />
       <item itemvalue="Spring Boot.MallElasticsearchApplication" />
-      <item itemvalue="JUnit.MallElasticsearchApplicationTests.deleteAllPlayer" />
       <item itemvalue="Application.BeanUtils" />
       <item itemvalue="Application.ProducerTest" />
       <item itemvalue="Spring Boot.MallTestApplication" />
       <item itemvalue="Spring Boot.MallEurekaServerApplication" />
       <item itemvalue="Spring Boot.MallRocketmqProducerApplication" />
+      <item itemvalue="Spring Boot.MallRocketmqConsumerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MallRocketmqConsumerApplication" />
         <item itemvalue="Spring Boot.MallTestApplication" />
         <item itemvalue="Spring Boot.MallEurekaServerApplication" />
         <item itemvalue="Application.ProducerTest" />
         <item itemvalue="Application.BeanUtils" />
-        <item itemvalue="JUnit.MallElasticsearchApplicationTests.deleteAllPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -693,7 +769,7 @@
       <workItem from="1585181389391" duration="864000" />
       <workItem from="1585321339312" duration="644000" />
       <workItem from="1585356229300" duration="60000" />
-      <workItem from="1585359265750" duration="8433000" />
+      <workItem from="1585359265750" duration="10677000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1583729163377</created>
@@ -836,7 +912,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156704000" />
+    <option name="totallyTimeSpent" value="158948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -868,7 +944,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991883" weight="0.3291367" />
       <window_info anchor="bottom" id="Analysis" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3291367" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31711712" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31616342" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024351" side_tool="true" weight="0.8381295" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3250444" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -915,12 +991,6 @@
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -954,47 +1024,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/TestUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-test/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/MallSmsServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplate.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.10.RELEASE/spring-core-5.0.10.RELEASE.jar!/org/springframework/lang/Nullable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/caffeine/template/CaffeineTemplateImpl.java" />
-    <entry file="file://$PROJECT_DIR$/mall-eureka-server/src/main/java/com/cjb/mall/caffeine/config/CaffeineConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/caffeine/2.8.1/caffeine-2.8.1.jar!/com/github/benmanes/caffeine/cache/Cache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-test/src/main/java/com/cjb/mall/MallTestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1124,13 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.8.RELEASE/spring-amqp-2.0.8.RELEASE.jar!/org/springframework/amqp/core/AmqpTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1253,13 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/template/MqTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1277,22 +1292,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java">
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="260">
+          <caret line="27" column="21" selection-start-line="19" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="52" column="70" selection-start-line="41" selection-start-column="8" selection-end-line="52" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/config/MqConfig.java">
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/config/MqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer/HttpConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/listener/RegSmsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sms-service/src/main/java/com/cjb/mall/sms/service/MallSmsServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/test/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/MallRocketmqConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-producer/src/main/java/com/cjb/mall/rocketmq/producer/controller/TestRocketMqController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-rocketmq/mall-rocketmq-consumer/src/main/java/com/cjb/mall/rocketmq/consumer/consumer/HttpCommonMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
           </folding>
         </state>
       </provider>
